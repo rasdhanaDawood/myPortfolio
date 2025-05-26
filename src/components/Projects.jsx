@@ -12,12 +12,12 @@ import image_6 from '../assets/weatherApp.png'
 
 export const Projects = () => {
     const listProjects = [
-        { id: 1, image: image_1, title: 'ToDo App', description: 'A simple and intuitive ToDo application built using React.js. This app allows users to add, edit, mark as complete, and delete tasks efficiently.' },
-        { id: 2, image: image_2, title: 'Portfolio', description: 'A showcase of my web development skills and projects, demonstrating my expertise in creating dynamic and responsive websites. This portfolio built with React+Vite and Tailwind CSS.' },
-        { id: 3, image: image_3, title: 'E-Commerce', description: 'An E-Commerce management system showcases my skills in full-stack web development and leverages modern technologies to deliver a seamless online shopping experience.' },
-        { id: 4, image: image_4, title: 'Recipe Generator', description: 'A simple and interactive Recipe Book built with React + Vite and deployed on Render. This will add ingredients to a list and it displays a recipe with the ingredients.' },
-        { id: 5, image: image_5, title: 'Netflix Clone', description: 'A Netflix Clone built with React+Vite, featuring a sleek UI and movie browsing functionality. This project mimics the look and feel of Netflix, explore movie lists, view details, and play trailers using React-YouTube.' },
-        { id: 6, image: image_6, title: 'Weather App', description: 'A simple React-based Weather App that allows users to check the current weather in any city using the OpenWeatherMap API.' },
+        { id: 1, image: image_1, title: 'ToDo App', description: 'A simple and intuitive ToDo application built using React.js.' },
+        { id: 2, image: image_2, title: 'Portfolio', description: 'A portfolio demonstrating my skills and experience built with React+Vite and Tailwind CSS.' },
+        { id: 3, image: image_3, title: 'E-Commerce', description: 'An E-Commerce management system showcases my skills in full-stack web development using NodeJS, HTML, CSS & MongoDB.' },
+        { id: 4, image: image_4, title: 'RecipeBook', description: 'A simple and interactive Recipe Book built with React + Vite and deployed on Render.' },
+        { id: 5, image: image_5, title: 'Netflix Clone', description: 'A Netflix Clone built with React+Vite, featuring a sleek UI and movie browsing functionality.' },
+        { id: 6, image: image_6, title: 'Weather App', description: 'A simple React-based Weather App to check the current weather in any city using the OpenWeatherMap API.' },
         
     ];
     const settings = {
@@ -43,10 +43,10 @@ export const Projects = () => {
                         listProjects.map((project) => (
                             <div key={project.id} className='p-4'>
                                 <div className='h-full border-2 border-orange-400 shadow-[0_0_15px_rgba(225,165,0,0.7)] border-opacity-60 rounded-lg overflow-hidden'>
-                                    <img src={project.image} alt={project.title} className='w-full h-auto lg:h-48 md:h-36 sm:h-24 object-cover object-center' />
+                                    <img src={project.image} alt={project.title} className='w-full lg:h-48 md:h-50 sm:h-70 object-fill object-center' />
                                     <div className='p-6'>
                                         <h2 className='tracking-widest text-xl title-font font-medium text-gray-400 mb-1'>{project.title}</h2>
-                                        <p className='leading-relaxed mb-3 h-40'>{project.description}</p>
+                                        <p className='leading-relaxed mb-3 md:h-40 lg:h-25 max-md:h-15'>{project.description}</p>
                                     </div>
                                 </div>
                             </div>
