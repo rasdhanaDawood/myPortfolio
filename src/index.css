@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+@import "tailwindcss";
+
+@theme {
+  --font-title: 'Oswald', Times;
+  --font-body:'Roboto',sans-serif;
+}
