@@ -1,6 +1,6 @@
 import {Navbar} from "./Navbar";
 import CV from '../assets/DeveloperCV.pdf'
-import img from '../assets/me.jpg'
+import img from '../assets/image.png'
 
 export const Hero = () => {
   return (
