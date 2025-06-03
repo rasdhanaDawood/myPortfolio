@@ -5,7 +5,7 @@ import html from '../assets/html5-logo.png'
 import css from '../assets/css3-logo.png'
 import js from '../assets/js-logo.png'
 
-export const Skills = () => {
+export default function  Skills(){
     return (
         <section id='skills' className='relative overflow-hidden flex flex-col text-white body-font'>
             <div className='container flex flex-wrap px-5 py-24 mx-auto items-center'>
@@ -23,18 +23,18 @@ export const Skills = () => {
                 <div data-aos='fade-left' data-aos-delay='500' className='flex flex-col md:w-1/2 md:pl-12'>
                     <nav className='flex flex-wrap list-none -mb-1'>
                         <li className='lg:w-1/3 mb-4 w-1/2'>
-                            <img src={html} alt='' className='rounded-full w-24 h-24 object-cover' />
+                            <img src={html} alt='' className='rounded-full w-24 h-24 object-cover transition-transform transform hover:scale-120 hover:shadow-[0_0_15px_rgba(225,165,0,0.7)] duration-300' />
                         </li> <li className='lg:w-1/3 mb-4 w-1/2'>
-                            <img src={react} alt='' className='rounded-full w-24 h-24 object-cover' />
+                            <img src={react} alt='' className='rounded-full w-24 h-24 object-cover transition-transform transform hover:scale-120 hover:shadow-[0_0_15px_rgba(225,165,0,0.7)] duration-300' />
                         </li>  <li className='lg:w-1/3 mb-4 w-1/2'>
-                            <img src={css} alt='' className='rounded-full w-24 h-24 object-cover' />
+                            <img src={css} alt='' className='rounded-full w-24 h-24 object-cover transition-transform transform hover:scale-120 hover:shadow-[0_0_15px_rgba(225,165,0,0.7)] duration-300' />
                         </li>
                         <li className='lg:w-1/3 mb-4 w-1/2'>
-                            <img src={nodejs} alt='' className='rounded-full w-24 h-24 object-cover' />
+                            <img src={nodejs} alt='' className='rounded-full w-24 h-24 object-cover transition-transform transform hover:scale-120 hover:shadow-[0_0_15px_rgba(225,165,0,0.7)] duration-300' />
                         </li> <li className='lg:w-1/3 mb-4 w-1/2'>
-                            <img src={js} alt='' className='rounded-full w-24 h-24 object-cover' />
+                            <img src={js} alt='' className='rounded-full w-24 h-24 object-cover transition-transform transform hover:scale-120 hover:shadow-[0_0_15px_rgba(225,165,0,0.7)] duration-300' />
                         </li> <li className='lg:w-1/3 mb-4 w-1/2'>
-                            <img src={mongodb} alt='' className='rounded-full w-24 h-24 object-cover' />
+                            <img src={mongodb} alt='' className='rounded-full w-24 h-24 object-cover transition-transform transform hover:scale-120 hover:shadow-[0_0_15px_rgba(225,165,0,0.7)] duration-300' />
                         </li> 
                     </nav>
                 </div>

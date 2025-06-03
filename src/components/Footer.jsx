@@ -1,4 +1,4 @@
-export const Footer = () => {
+export default function  Footer(){
     const listNavbar = [
         { name: 'Home', link: '#' },
         { name: 'Skills', link: '#skills' },

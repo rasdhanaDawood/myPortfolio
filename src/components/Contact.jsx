@@ -1,4 +1,4 @@
-export const Contact = () => {
+export default function Contact (){
     
     return (
         <section id='contact' data-aos='fade-up' data-aos-delay='400'>

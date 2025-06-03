@@ -27,9 +27,9 @@ export default function ScrollToTopButton() {
         visible && (
             <button
                 onClick={scrollToTop}
-                className="fixed bottom-5 right-5 p-3 rounded-full bg-primary-500 text-white shadow-lg hover:bg-primary-600 transition"
+                className="fixed bottom-8 right-5 rounded-full shadow-lg "
                 aria-label="Scroll To Top"
-            ><img src={up_icon} alt="up-icon" className="rounded-full h-10 w-10 border-2 border-white" />
+            ><img src={up_icon} alt="up-icon" className="rounded-full h-8 w-8 transition-transform transform hover:scale-110 hover:shadow-[0_0_15px_rgba(225,165,0,0.7)] duration-300" />
             </button>
         )
     );

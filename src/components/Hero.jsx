@@ -2,7 +2,7 @@ import {Navbar} from "./Navbar";
 import CV from '../assets/DeveloperCV.pdf'
 import img from '../assets/image.png'
 
-export const Hero = () => {
+export default function  Hero(){
   return (
       <div className='relative overflow-hidden min-h-[550px] sm:min-h-[660px] flex flex-col'>
           <div className='md:h-[720px] h-[960px] md:w-[640px] w-[880px] right-0 bg-gradient-to-r from-orange-600
@@ -16,7 +16,7 @@ export const Hero = () => {
               <div className = "container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
                   <div className = "lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center relative">
                       <h1 className = "title-font sm:text-4xl text-4xl mb-4 font-bold text-white">
-                          Hi! I'm Rasdhana Dawood
+                          Hi! I'm <br/> Rasdhana Dawood
                       </h1>
                       <p className = "mb-8 leading-relaxed">
                           FullStack Web Developer
@@ -31,7 +31,7 @@ export const Hero = () => {
                       </div>
                   </div>
                   <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 items-center justify-center flex">
-                      <img src={img} alt="hero" className="object-cover object-center rounded-full border-4 border-gray-800 border-l-white w-80 h-80" />
+                      <img src={img} alt="hero" className="object-cover object-center rounded-full border-4 border-gray-800 border-l-white w-80 h-80 transition-transform transform hover:scale-105 hover:shadow-2xl duration-300" />
                   </div>
               </div>
           </section>

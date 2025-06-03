@@ -1,4 +1,4 @@
-export const Language = () => {
+export default function  Language(){
     const languages = [
         { code: 'Eng', name: 'English', level: 'Expert' },
         { code: 'Hin', name: 'Hindi', level: 'Expert' },
@@ -10,7 +10,7 @@ export const Language = () => {
             <div className="grid grid-cols-2 gap-10 md:flex md:gap-20">
                 {
                     languages.map((language, index) => (
-                        <div key={index} className="achievement flex flex-col items-center">
+                        <div key={index} className="achievement flex flex-col items-center transition-transform transform hover:scale-120 hover:shadow-2xl duration-300">
                             <div className="circle w-20 h-20 md:w-16 md:h-16 bg-white rounded-full relative flex items-center justify-center text-lg md:text-xl font-bold mb-6 md:mb-8 shadow-lg">
                                 <span className="z-10">{language.code}</span>
                                 <div className="absolute top-[-6px] left-[-6px] right-[-6px] bottom-[-6px] md:top-[-8px] md:left-[-8px] md:right-[-8px] md:bottom-[-8px] rounded-full bg-gradient-to-b from-[#ff9743] to-[#ffe460] shadow-[0_0_20px_rgba(255,165,0,0.7)] z-0"></div>
